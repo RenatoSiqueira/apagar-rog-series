@@ -26,14 +26,15 @@ app.use('/', pages)
 app.use('/series', series)
 
 
-mongoose
-  .connect(mongo, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    app.listen(port, () => {
-      console.log('Listening on: ' + port)
-    })
-  })
-  .catch(e => {
-    console.log(e)
-  })
+app.listen(port, () => {
+  console.log('Listening on: ' + port)
+})
+// mongoose
+//   .connect(mongo, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => {
+    
+//   })
+//   .catch(e => {
+//     console.log(e)
+//   })
 

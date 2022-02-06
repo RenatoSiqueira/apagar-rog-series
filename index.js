@@ -7,10 +7,10 @@ const pages = require('./routes/pages')
 const series = require('./routes/series')
 
 const port = process.env.PORT || 3000
-const mongo = process.env.MONGO || 'mongodb://localhost/minhas-series'
+// const mongo = process.env.MONGO || 'mongodb://localhost/minhas-series'
 
-const mongoose = require('mongoose')
-mongoose.Promise = global.Promise
+// const mongoose = require('mongoose')
+// mongoose.Promise = global.Promise
 
 // process request body
 app.use(bodyParser.urlencoded({ extended: true }))
